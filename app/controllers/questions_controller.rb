@@ -1,7 +1,9 @@
 class QuestionsController < ApplicationController
-  before_action :set_question, only: [:show, :edit, :update, :destroy]
+  before_action :set_question!, only: [:show, :edit, :update, :destroy]
 
   def show
+    @answer = @question.answers.build
+    @answers = Answer.order created_at: :desc
   end
 
   def destroy
@@ -46,7 +48,7 @@ class QuestionsController < ApplicationController
     params.require(:question).permit(:title, :body)
   end
 
-  def set_question
+  def set_question!
     @question = Question.find params[:id]
   end
 end
