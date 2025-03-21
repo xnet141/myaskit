@@ -2,8 +2,10 @@ class QuestionsController < ApplicationController
   before_action :set_question!, only: [:show, :edit, :update, :destroy]
 
   def show
+    @question = @question.decorate
     @answer = @question.answers.build
-    @pagy, @answers = pagy @question.answers.order created_at: :desc
+    @pagy, @answers = pagy @question.answers.order(created_at: :desc)
+    @answers = @answers.decorate
     #Answer.where(question: @question).limit(2).order(created_at: :desc)
   end
 
@@ -27,6 +29,7 @@ class QuestionsController < ApplicationController
 
   def index
     @pagy, @questions = pagy Question.order(created_at: :desc)
+    @questions = @questions.decorate
   end
 
   def new
