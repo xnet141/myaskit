@@ -25,13 +25,17 @@ gem "bcrypt", "~> 3.1.16"
 
 gem 'pagy', '~> 9.3'
 
+gem 'draper', '~> 4.0'
+
+gem 'valid_email2', '~> 4.0'
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
-gem 'draper', '~> 4.0'
+
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
