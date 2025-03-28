@@ -32,8 +32,15 @@ module Authentication
       session[:user_id] = user.id
     end
 
+    def remember(user)
+      user.remember_me
+      cookies.encrypted.permanent[:remember_token] = user.remember_token
+      cookies.encrypted.permanent[:user_id] = user.id
+    end
+
     def sign_out
       session.delete :user_id
+      @current_user = nil
     end
 
     # def initialize

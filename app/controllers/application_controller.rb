@@ -7,3 +7,7 @@ class ApplicationController < ActionController::Base
   include ErrorHandling
   include Authentication
 end
+
+def set_t1(user)
+  @t = user.t1
+end
