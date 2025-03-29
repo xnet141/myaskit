@@ -246,10 +246,6 @@ GEM
       rack (>= 1.1)
       rubocop (>= 1.72.1, < 2.0)
       rubocop-ast (>= 1.38.0, < 2.0)
-    rubocop-rails-omakase (1.1.0)
-      rubocop (>= 1.72)
-      rubocop-performance (>= 1.24)
-      rubocop-rails (>= 2.30)
     ruby-progressbar (1.13.0)
     ruby2_keywords (0.0.5)
     securerandom (0.4.1)
@@ -315,7 +311,9 @@ DEPENDENCIES
   pagy (~> 9.3)
   puma (>= 5.0)
   rails (~> 7.2.2, >= 7.2.2.1)
-  rubocop-rails-omakase
+  rubocop (~> 1.18)
+  rubocop-performance (~> 1.11)
+  rubocop-rails (~> 2.11)
   sprockets-rails
   sqlite3 (>= 1.4)
   tzinfo-data
