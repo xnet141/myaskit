@@ -23,7 +23,7 @@ module ApplicationHelper
     link_to title, url, options
   end
 
-  def currently_at(current_page = '')
+  def currently_at(current_page = '') #рендер меню, передача переменной current_page
     render partial: 'shared/menu', locals: { current_page: current_page }
   end
 

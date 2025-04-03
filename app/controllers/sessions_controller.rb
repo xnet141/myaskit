@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by email: params[:email]
     if user&.authenticate(params[:password])
-      do_sign_in
+      do_sign_in(user)
     else
       flash.now[:warning] = 'Incorrect email and/or password'
       render :new
