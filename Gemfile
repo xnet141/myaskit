@@ -31,6 +31,8 @@ gem 'valid_email2', '~> 4.0'
 gem 'rubyzip', '~> 2.3'
 gem 'caxlsx', '~> 3.1'
 gem 'caxlsx_rails', '~> 0.6'
+gem 'rubyXL', '~> 3.4'
+gem 'activerecord-import', '~> 1.2'
 
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -52,6 +54,7 @@ group :development, :test do
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   # gem "rubocop-rails-omakase", require: false
   gem 'faker', '~> 2'
+  gem 'pry-rails'
 end
 
 group :development do
