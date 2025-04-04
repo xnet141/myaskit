@@ -27,7 +27,7 @@ gem 'bcrypt', '~> 3.1.16'
 
 gem 'pagy', '~> 9.3'
 gem 'draper', '~> 4.0'
-gem 'valid_email2', '~> 4.0'
+gem 'valid_email2', '~> 7.0'
 gem 'rubyzip', '~> 2.3'
 gem 'caxlsx', '~> 3.1'
 gem 'caxlsx_rails', '~> 0.6'
