@@ -116,7 +116,7 @@ GEM
       ruby2_keywords
     drb (2.2.1)
     erubi (1.13.1)
-    faker (2.23.0)
+    faker (3.5.1)
       i18n (>= 1.8.11, < 2)
     globalid (1.2.1)
       activesupport (>= 6.1)
@@ -330,7 +330,7 @@ DEPENDENCIES
   cssbundling-rails
   debug
   draper (~> 4.0)
-  faker (~> 2)
+  faker (~> 3)
   jbuilder
   jsbundling-rails
   pagy (~> 9.3)
